@@ -1,8 +1,8 @@
 from rest_framework.viewsets import ModelViewSet
 from rest_framework.generics import CreateAPIView, ListAPIView, RetrieveAPIView, UpdateAPIView, DestroyAPIView
 
-from zifirkaguide.models import Lesson, Course
-from zifirkaguide.serializer import CourseSerializer, LessonSerializer
+from materials.models import Lesson, Course
+from materials.serializer import CourseSerializer, LessonSerializer
 
 
 # Create your views here.

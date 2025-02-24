@@ -1,6 +1,6 @@
 from rest_framework.serializers import ModelSerializer
 
-from zifirkaguide.models import Course, Lesson
+from materials.models import Course, Lesson
 
 
 class CourseSerializer(ModelSerializer):

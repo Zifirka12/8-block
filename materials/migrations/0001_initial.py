@@ -33,7 +33,7 @@ class Migration(migrations.Migration):
                 ('name', models.CharField(help_text='Введите название урока', max_length=100, verbose_name='Наименование')),
                 ('description', models.TextField(blank=True, help_text='Введите описание урока', null=True, verbose_name='Описание')),
                 ('image', models.ImageField(blank=True, help_text='Загрузите изображение урока', null=True, upload_to='products/', verbose_name='Изображение')),
-                ('course', models.ForeignKey(blank=True, help_text='В каком курсе урок?', null=True, on_delete=django.db.models.deletion.SET_NULL, to='zifirkaguide.course', verbose_name='Курс')),
+                ('course', models.ForeignKey(blank=True, help_text='В каком курсе урок?', null=True, on_delete=django.db.models.deletion.SET_NULL, to='materials.course', verbose_name='Курс')),
             ],
             options={
                 'verbose_name': 'Урок',
