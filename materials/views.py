@@ -2,13 +2,15 @@ from rest_framework.viewsets import ModelViewSet
 from rest_framework.generics import CreateAPIView, ListAPIView, RetrieveAPIView, UpdateAPIView, DestroyAPIView
 
 from materials.models import Lesson, Course
-from materials.serializer import CourseSerializer, LessonSerializer
+from materials.serializer import LessonSerializer, LessonDetailSerializer, CourseSerializer
 
 
-# Create your views here.
 class CourseViewSet(ModelViewSet):
     queryset = Course.objects.all()
     serializer_class = CourseSerializer
+
+    def partial_update(self, request, *args, **kwargs):
+        return super().partial_update(request, *args, **kwargs)
 
 
 class LessonCreateApiView(CreateAPIView):
@@ -23,7 +25,7 @@ class LessonListApiView(ListAPIView):
 
 class LessonRetrieveApiView(RetrieveAPIView):
     queryset = Lesson.objects.all()
-    serializer_class = LessonSerializer
+    serializer_class = LessonDetailSerializer
 
 
 class LessonUpdateApiView(UpdateAPIView):

@@ -1,25 +1,22 @@
 from django.db import models
 
 
-# Create your models here.
 class Course(models.Model):
+    objects = None
     name = models.CharField(
         max_length=100,
         verbose_name="Название",
-        help_text="Введите название курса"
     )
     description = models.TextField(
         verbose_name="Описание",
         blank=True,
         null=True,
-        help_text="Введите описание курса"
     )
     image = models.ImageField(
         upload_to="products/",
-        verbose_name="Изображение",
+        verbose_name="Картинка",
         blank=True,
         null=True,
-        help_text="Вставьте изображение курса"
     )
 
     class Meta:
@@ -35,20 +32,17 @@ class Lesson(models.Model):
     name = models.CharField(
         max_length=100,
         verbose_name="Наименование",
-        help_text="Введите название урока"
     )
     description = models.TextField(
-        verbose_name="Описание",
+        verbose_name="Внешка",
         blank=True,
         null=True,
-        help_text="Введите описание урока"
     )
     image = models.ImageField(
         upload_to="products/",
-        verbose_name="Изображение",
+        verbose_name="Картинка",
         blank=True,
         null=True,
-        help_text="Загрузите изображение урока",
     )
     course = models.ForeignKey(
         Course,
@@ -56,7 +50,7 @@ class Lesson(models.Model):
         null=True,
         blank=True,
         on_delete=models.SET_NULL,
-        help_text="В каком курсе урок?"
+        related_name="lessons",
     )
 
     class Meta:

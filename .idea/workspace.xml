@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b015e50d-4235-4ea3-9746-701b48510d07" name="Changes" comment="30/1.1">
+    <list default="true" id="b015e50d-4235-4ea3-9746-701b48510d07" name="Changes" comment="30/1.2">
+      <change afterPath="$PROJECT_DIR$/users/serializer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/materials/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/materials/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/materials/serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/materials/serializer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +114,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740377378292</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="30/1.2">
+      <option name="closed" value="true" />
+      <created>1740406534472</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1740406534472</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -126,6 +139,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="30/1" />
     <MESSAGE value="30/1.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="30/1.1" />
+    <MESSAGE value="30/1.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="30/1.2" />
   </component>
 </project>
