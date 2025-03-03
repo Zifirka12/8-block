@@ -4,12 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b015e50d-4235-4ea3-9746-701b48510d07" name="Changes" comment="30/1.2">
-      <change afterPath="$PROJECT_DIR$/users/serializer.py" afterDir="false" />
+    <list default="true" id="b015e50d-4235-4ea3-9746-701b48510d07" name="Changes" comment="30/2.0">
+      <change afterPath="$PROJECT_DIR$/materials/migrations/0002_alter_lesson_course_alter_lesson_image.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/materials/migrations/0003_lesson_owner.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/materials/migrations/0004_course_owner.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/migrations/0002_alter_lesson_course_alter_lesson_image.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/permissions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/materials/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/materials/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/materials/serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/materials/serializer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/materials/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/materials/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,6 +65,11 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Student/PycharmProjects/drf by Zifirka/manage.py&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Student\PycharmProjects\drf by Zifirka\users" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="run server guide" type="PythonConfigurationType" factoryName="Python">
       <module name="drf by Zifirka" />
@@ -122,7 +135,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740406534472</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="30/2.0">
+      <option name="closed" value="true" />
+      <created>1740641543934</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1740641543934</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -140,6 +161,7 @@
     <MESSAGE value="30/1" />
     <MESSAGE value="30/1.1" />
     <MESSAGE value="30/1.2" />
-    <option name="LAST_COMMIT_MESSAGE" value="30/1.2" />
+    <MESSAGE value="30/2.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="30/2.0" />
   </component>
 </project>
