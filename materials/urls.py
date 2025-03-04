@@ -1,14 +1,14 @@
 from django.urls import path
 from rest_framework.routers import SimpleRouter
 
-from zifirkaguide.views import CourseViewSet, LessonCreateApiView, LessonUpdateApiView, LessonRetrieveApiView, \
+from materials.views import CourseViewSet, LessonCreateApiView, LessonUpdateApiView, LessonRetrieveApiView, \
     LessonDestroyApiView, LessonListApiView
-from zifirkaguide.apps import ZifirkaguideConfig
+from materials.apps import ZifirkaguideConfig
 
 app_name = ZifirkaguideConfig.name
 
 router = SimpleRouter()
-router.register("", CourseViewSet)
+router.register("courses", CourseViewSet)
 
 urlpatterns = [
     path("lessons/", LessonListApiView.as_view(), name="lessons_list"),
