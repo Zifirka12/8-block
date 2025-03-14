@@ -1,8 +1,9 @@
 from django.urls import path
 from rest_framework.routers import SimpleRouter
+from materials.models import Subscription
 
 from materials.views import CourseViewSet, LessonCreateApiView, LessonUpdateApiView, LessonRetrieveApiView, \
-    LessonDestroyApiView, LessonListApiView
+    LessonDestroyApiView, LessonListApiView, SubView
 from materials.apps import ZifirkaguideConfig
 
 app_name = ZifirkaguideConfig.name
@@ -16,6 +17,7 @@ urlpatterns = [
     path("lessons/<int:pk>/update/", LessonUpdateApiView.as_view(), name="lessons_update"),
     path("lessons/<int:pk>/delete/", LessonDestroyApiView.as_view(), name="lessons_delete"),
     path("lessons/create/", LessonCreateApiView.as_view(), name="lessons_create"),
+    path("courses/<int:pk>/subscribe", SubView.as_view())
 ]
 
 urlpatterns += router.urls

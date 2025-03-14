@@ -1,4 +1,5 @@
 from django.db import models
+from users.models import User
 
 
 class Course(models.Model):
@@ -75,3 +76,17 @@ class Lesson(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class Subscription(models.Model):
+    user = models.ForeignKey(
+        User, on_delete=models.CASCADE, blank=True, null=True
+    )
+    course = models.ForeignKey(Course, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return f'subscription {self.pk}'
+
+    class Meta:
+        verbose_name = 'Подписка'
+        verbose_name_plural = 'Подписки'
