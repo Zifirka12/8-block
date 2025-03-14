@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b015e50d-4235-4ea3-9746-701b48510d07" name="Changes" comment="31/0.1">
-      <change afterPath="$PROJECT_DIR$/materials/paginators.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/materials/validators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/materials/migrations/0004_course_owner.py" beforeDir="false" afterPath="$PROJECT_DIR$/materials/migrations/0004_course_owner.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/materials/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/materials/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/materials/serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/materials/serializer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/materials/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/materials/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/materials/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/materials/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/materials/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/materials/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/poetry.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
-    </list>
+    <list default="true" id="b015e50d-4235-4ea3-9746-701b48510d07" name="Changes" comment="32.1/0.1" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -150,7 +137,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741002221668</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="32.1/0.1">
+      <option name="closed" value="true" />
+      <created>1741956771834</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1741956771834</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -170,6 +165,7 @@
     <MESSAGE value="30/1.2" />
     <MESSAGE value="30/2.0" />
     <MESSAGE value="31/0.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="31/0.1" />
+    <MESSAGE value="32.1/0.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="32.1/0.1" />
   </component>
 </project>
