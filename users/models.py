@@ -1,6 +1,7 @@
 from django.contrib.auth.models import AbstractUser
 from django.db import models
 from materials.models import Course, Lesson
+from django.forms import URLField
 
 
 # Create your models here.
@@ -88,11 +89,23 @@ class Payments(models.Model):
         null=True,
         blank=True
     )
+    link = models.URLField(
+        verbose_name="ссылка на оплаты",
+        max_length=400,
+        blank=True,
+        null=True)
+    session_id = models.CharField(
+        "ID сессии",
+        max_length=255,
+        blank=True,
+        null=True)
 
     def __str__(self):
         return f'{self.user} {self.paid_course}'
 
     class Meta:
-        verbose_name = 'Оплата'
-        verbose_name_plural = 'Оплаты'
+        verbose_name = "Оплата"
+        verbose_name_plural = "Оплаты"
 
+    def __str__(self):
+        return self.session_id
