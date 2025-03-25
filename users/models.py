@@ -1,7 +1,7 @@
 from django.contrib.auth.models import AbstractUser
 from django.db import models
 from materials.models import Course, Lesson
-from django.forms import URLField
+#from django.forms import URLField
 
 
 # Create your models here.

@@ -38,3 +38,7 @@ class SubSerializer(serializers.ModelSerializer):
     class Meta:
         model = Subscription
         fields = "__all__"
+
+
+class LessonDetailSerializer:
+    pass

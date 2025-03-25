@@ -4,15 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b015e50d-4235-4ea3-9746-701b48510d07" name="Changes" comment="32.1/0.1">
-      <change afterPath="$PROJECT_DIR$/users/migrations/0005_alter_payment_options_payment_link_and_more.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/services.py" afterDir="false" />
+    <list default="true" id="b015e50d-4235-4ea3-9746-701b48510d07" name="Changes" comment="32.2/0.1">
+      <change afterPath="$PROJECT_DIR$/config/celery.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/materials/tasks.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/poetry.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/materials/serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/materials/serializer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/materials/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/materials/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,7 +164,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741957020624</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="32.2/0.1">
+      <option name="closed" value="true" />
+      <created>1742804730271</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1742804730271</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -184,6 +193,7 @@
     <MESSAGE value="30/2.0" />
     <MESSAGE value="31/0.1" />
     <MESSAGE value="32.1/0.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="32.1/0.1" />
+    <MESSAGE value="32.2/0.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="32.2/0.1" />
   </component>
 </project>
