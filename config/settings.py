@@ -12,7 +12,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
 INSTALLED_APPS = [
     "django.contrib.admin",
     "django.contrib.auth",
@@ -27,7 +26,7 @@ INSTALLED_APPS = [
     "corsheaders",
     'django_celery_beat',
     "users",
-    "lms",
+    "materials",
 ]
 
 MIDDLEWARE = [
@@ -61,18 +60,16 @@ TEMPLATES = [
 
 WSGI_APPLICATION = "config.wsgi.application"
 
-
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql_psycopg2",
-        "NAME": os.getenv("DATABASE_NAME"),
-        "USER": os.getenv("DATABASE_USER"),
-        "PASSWORD": os.getenv("DATABASE_PASSWORD"),
-        "HOST": os.getenv("DATABASE_HOST"),
-        "PORT": os.getenv("DATABASE_PORT", default="5432"),
+        "NAME": os.getenv("POSTGRES_DB"),
+        "USER": os.getenv("POSTGRES_USER"),
+        "PASSWORD": os.getenv("POSTGRES_PASSWORD"),
+        "HOST": os.getenv("POSTGRES_HOST"),
+        "PORT": os.getenv("POSTGRES_PORT", default="5432"),
     }
 }
-
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -89,7 +86,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 LANGUAGE_CODE = "en-us"
 
 TIME_ZONE = "Europe/Moscow"
@@ -100,10 +96,9 @@ USE_TZ = True
 
 STATIC_URL = "static/"
 
-
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-AUTH_USER_MODEL = "users.CustomUser"
+AUTH_USER_MODEL = "users.User"
 
 API_KEY = os.getenv("API_KEY")
 
@@ -126,11 +121,11 @@ CSRF_TRUSTED_ORIGINS = [
 
 CELERY_BROKER_URL = os.getenv('CELERY_URL')
 
-CELERY_RESULT_BACKEND = os.getenv('CELERY_URL') 
+CELERY_RESULT_BACKEND = os.getenv('CELERY_URL')
 
 CELERY_TIMEZONE = TIME_ZONE
 
-CELERY_TASK_TRACK_STARTED = True 
+CELERY_TASK_TRACK_STARTED = True
 
 CELERY_TASK_TIME_LIMIT = 30 * 60
 
@@ -144,4 +139,3 @@ EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 SERVER_EMAIL = EMAIL_HOST_USER
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
-

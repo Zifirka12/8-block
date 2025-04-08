@@ -1,7 +1,9 @@
-from django.contrib.auth.models import AbstractUser
+from django.contrib.auth.models import AbstractUser, Group, Permission
 from django.db import models
 from materials.models import Course, Lesson
-#from django.forms import URLField
+
+
+# from django.forms import URLField
 
 
 # Create your models here.
@@ -43,7 +45,9 @@ class User(AbstractUser):
         return self.email
 
 
-class Payments(models.Model):
+class Payment(models.Model):
+    amount = models.DecimalField(max_digits=10, decimal_places=2)
+    created_at = models.DateTimeField(auto_now_add=True)
     PAYMENT_STATUS = [
         ("cash", "наличные"),
         ("transfer", "перевод на счет"),
